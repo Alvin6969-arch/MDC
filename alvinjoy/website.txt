@@ -1,0 +1,6 @@
+<html>
+<body>
+<h1> Image demo </h1>
+<img src="dwayne.jpg"></img>
+</body>
+</html>
