@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Professional Portfolio</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto&display=swap');
+
+  /* Reset & base */
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+  }
+
+  header {
+    background-color: #1f1f1f;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.7);
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  nav button {
+    background: none;
+    border: none;
+    color: #bbb;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  nav button:hover,
+  nav button.active {
+    background-color: #4a90e2;
+    color: #fff;
+    outline: none;
+  }
+
+  main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+
+  section {
+    display: none;
+    animation: fadeIn 0.8s ease forwards;
+  }
+
+  section.active {
+    display: block;
+  }
+
+  h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #4a90e2;
+    margin-bottom: 0.5rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    margin-top: 0;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+    color: #ccc;
+  }
+
+  ul {
+    list-style: disc inside;
+    color: #ccc;
+  }
+
+  /* Contact form */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 500px;
+  }
+
+  label {
+    font-weight: 600;
+    color: #bbb;
+  }
+
+  input, textarea {
+    padding: 0.7rem;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  input {
+    background-color: #222;
+    color: #eee;
+  }
+
+  textarea {
+    background-color: #222;
+    color: #eee;
+    resize: vertical;
+    min-height: 100px;
+  }
+
+  input:focus, textarea:focus {
+    outline: 2px solid #4a90e2;
+  }
+
+  button.submit-btn {
+    background-color: #4a90e2;
+    border: none;
+    padding: 0.8rem;
+    color: white;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+
+  button.submit-btn:hover {
+    background-color: #357ABD;
+  }
+
+  /* Animation */
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+  /* Responsive */
+  @media (max-width: 600px) {
+    nav {
+      flex-direction: column;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    main {
+      margin: 1rem;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <nav aria-label="Primary navigation">
+    <button class="nav-btn active" data-target="home">Home</button>
+    <button class="nav-btn" data-target="hobbies-qualifications">My Hobbies & Qualifications</button>
+    <button class="nav-btn" data-target="extra-curricular">Extra-Curricular Activities</button>
+    <button class="nav-btn" data-target="home-details">My Home Details</button>
+    <button class="nav-btn" data-target="contact">Contact Me</button>
+  </nav>
+</header>
+
+<main>
+  <section id="home" class="active" tabindex="0">
+  <center>  <h1>Welcome to My Portfolio</h1> <center>
+  <center>   <img src="img11.jpg"></img>  <center>
+ <p>Hi, I'm Alvin Joy, and I briefly state what you do, e.g., help businesses grow their online presence, design beautiful user interfaces, write engaging stories. On this site, you'll find what visitors will see, e.g., my portfolio, articles on movies and actors, services I offer. I believe in creating elegant solutions, the power of storytelling, clean design and I'm excited to share my work with you.
+
+  </section>
+
+   <section id="hobbies-qualifications" tabindex="0">
+  <center>  <h2>My Hobbies & Qualifications</h2><center><br>
+   <center> <p><strong>Hobbies:</strong></p><center>
+    <ul>
+     
+      <center>  <li>Going gym</li><center><br>
+      <center> <img src="img12.jpg"></img><center>
+        <li>Playing video games</li>
+   <img src="img13.jpg"></img>
+        <li>Batminton </li>
+src="img14.jpg"></img  <img >
+        <li>Photography</li>
+   <img src="img16.jpg"></img>&nbsp&nbsp <img src="img17.jpg"></img>
+
+    </ul>
+  <center>  <p><strong>Qualifications:</strong></p><center>
+  <center>      <img src="img15.jpg"></img> <center>
+
+    <ul>
+      <li>Bachelor’s Degree in Finance and Taxation</li>
+      <li>ACCA 9 papers cleared (React & JavaScript)</li>
+      <li>Completed 10th and 12th</li>
+    </ul>
+  </section>
+
+  <section id="extra-curricular" tabindex="0">
+
+   <center>  <h2>Extra-Curricular Activities</h2> <center><br>
+      <center> <img src="img22.jpg"></img> <center>
+
+    <ul>
+      <li>Volunteered at local community coding bootcamps</li>
+      <li>Organized tech meetups and hackathons</li>
+      <li>Member of university debate club</li>
+      <li>Contributed to open-source projects</li>
+    </ul>
+  </section>
+
+   <center> <section id="home-details" tabindex="0"><center>
+    <h2>My Home Details</h2><br>
+   <center>   <img src="img21.jpg"></img> <center>
+
+      <p>I live with my parents. My house is in Kothamangalam. I studied at abu dhabi till 8th and studied 9th and 10th at Sobhana Public School.I completed 11th and 12th at st antonys publiu school anakkal kottayam district.I stayed at hostel during 11th and 12th.Now i am a 1st student at Rajagiri College of Social Science persuaing BCOM ACCA.</p>
+
+
+      </section>
+
+  <section id="contact" tabindex="0">
+    <h2>Contact Me</h2>
+    <form id="contactForm" novalidate>
+      <label for="name">Name *</label>
+      <input type="text" id="name" name="name" required placeholder="Your full name" />
+
+      <label for="email">Email *</label>
+      <input type="email" id="email" name="email" required placeholder="your.email@example.com" />
+
+      <label for="message">Message *</label>
+      <textarea id="message" name="message" required placeholder="Write your message here..."></textarea>
+
+      <button type="submit" class="submit-btn">Send Message</button>
+    </form>
+    <p id="formResponse" role="alert" aria-live="polite" style="margin-top:1rem;"></p>
+  </section>
+</main>
+
+<script>
+  // Navigation button logic
+  const navButtons = document.querySelectorAll('.nav-btn');
+  const sections = document.querySelectorAll('main section');
+
+  navButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      // Remove active classes
+      navButtons.forEach(b => b.classList.remove('active'));
+      sections.forEach(s => s.classList.remove('active'));
+
+      // Add active to clicked button and related section
+      btn.classList.add('active');
+      const target = btn.getAttribute('data-target');
+      document.getElementById(target).classList.add('active');
+      document.getElementById(target).focus();
+    });
+  });
+
+  // Contact form submission (simulate sending)
+  const form = document.getElementById('contactForm');
+  const response = document.getElementById('formResponse');
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    response.textContent = '';
+    
+    const name = form.name.value.trim();
+    const email = form.email.value.trim();
+    const message = form.message.value.trim();
+
+    if (!name || !email || !message) {
+      response.style.color = 'tomato';
+      response.textContent = 'Please fill in all required fields.';
+      return;
+    }
+
+    // Simple email regex check
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      response.style.color = 'tomato';
+      response.textContent = 'Please enter a valid email address.';
+      return;
+    }
+
+    // Simulate successful submission
+    response.style.color = '#4a90e2';
+    response.textContent = `Thank you, ${name}! Your message has been sent.`;
+
+    form.reset();
+  });
+</script>
+
+</body>
+</html>
